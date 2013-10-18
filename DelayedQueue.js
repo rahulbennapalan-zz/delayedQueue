@@ -1,5 +1,3 @@
-var sleep = require("sleep");
-
 // Constructor
 function DelayedQueue() {
 	// initialize queue
