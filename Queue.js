@@ -2,7 +2,7 @@
 function Queue() {
 	// initialization
 	this.queue = [];
-	console.log("queue initialized");
+	console.log("Queue Initialized");
 	return this;
 }
 
@@ -14,6 +14,11 @@ Queue.prototype.enqueue = function(attr) {
 // dequeue
 Queue.prototype.dequeue = function() {
 	return this.queue.pop();
+};
+
+// dequeue all
+Queue.prototype.dequeueAll = function() {
+	this.queue = [];
 };
 
 // export the class
