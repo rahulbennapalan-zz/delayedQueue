@@ -12,7 +12,7 @@ DelayedQueue.prototype.put = function(attr, callback, delay) {
 		if (delay === null || delay === '0') {
 			this.queue.enqueue(attr);
 			console.log('[' + attr + '] Inserted');
-			callback(attr + ' Inserted');
+			callback('[' + attr + '] Inserted');
 		} else {
 			setTimeout(function(_queue) {
 				_queue.enqueue(attr);
