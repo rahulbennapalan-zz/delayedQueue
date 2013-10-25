@@ -47,7 +47,7 @@ http.createServer(function(req, res) {
 							response.message = err;
 						} else {
 							response.status = "OK";
-							response.message = message;
+							response.id = message;
 						}
 						res.end(JSON.stringify(response, null, 4) + '\n');
 					}, time);
